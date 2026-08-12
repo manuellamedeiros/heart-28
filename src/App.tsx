@@ -50,23 +50,23 @@ export default function App() {
           >
             <div className="space-y-2">
               <div className="flex gap-2 text-pink-soft/60">
-                <span>[system]</span>
+                <span>[ALERTA]</span>
                 <Typewriter 
-                  text="Initializing heart.PROTOCOL_v2.0..." 
+                  text="Inicializar♡" 
                   delay={30} 
                   onComplete={() => setConsoleFinished(true)}
                 />
               </div>
               
               <div className="flex gap-2 h-6">
-                <span>[status]</span>
+                <span>[recado]</span>
                 {consoleFinished && (
                     <motion.span 
                         initial={{ opacity: 0 }} 
                         animate={{ opacity: 1 }} 
                         className="text-green-400"
                     >
-                        READY
+                        Pronto Amor?
                     </motion.span>
                 )}
               </div>
@@ -78,7 +78,7 @@ export default function App() {
                   className="pt-8 flex flex-col items-start gap-6"
                 >
                   <p className="text-white/40 italic">
-                    {">"} One encrypted package found for you.
+                    {">"} Uma carta secreta foi encontrada para você.
                   </p>
                   
                   <button
@@ -90,12 +90,12 @@ export default function App() {
                     className="group flex items-center gap-3 px-6 py-3 border border-pink-deep/30 bg-pink-deep/5 hover:bg-pink-deep/10 text-pink-soft transition-all duration-300 pointer-events-auto"
                   >
                     <Lock size={16} className="group-hover:rotate-12 transition-transform" />
-                    <span className="font-mono tracking-widest uppercase text-xs">Decrypt Message</span>
+                    <span className="font-mono tracking-widest uppercase text-xs">Decifrar mensagem</span>
                     <span className="terminal-cursor" />
                   </button>
                   
                   <p className="text-[10px] text-white/20 animate-pulse">
-                    (or just click anywhere)
+                    (Para Arthur Rodrigo Lelli)
                   </p>
                 </motion.div>
               )}
@@ -116,9 +116,10 @@ export default function App() {
               transition={{ delay: 3, duration: 1.5 }}
               className="z-20 text-center"
             >
-              <h2 className="text-pink-deep font-mono text-xl tracking-[0.3em] uppercase glow-text mb-2">
-                Decrypted
-              </h2>
+              
+              <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontStyle: 'italic', textShadow: '0 0 15px rgba(255, 20, 100, 0.7)' }} className="text-[#e60026] text-4xl mb-2">
+  Decifrada
+</h2>
               <div className="w-12 h-px bg-pink-deep/30 mx-auto mb-8" />
               
               <motion.button
